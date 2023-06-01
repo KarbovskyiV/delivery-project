@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa322c53454393ed775cfe4807d54a50",
+    "content-hash": "939e83a8a59cc478712db274b2fc5d06",
     "packages": [
         {
             "name": "brick/math",
@@ -303,6 +303,47 @@
                 }
             ],
             "time": "2022-12-15T16:57:16+00:00"
+        },
+        {
+            "name": "dotsplatform/utils",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dotsplatform/utils.git",
+                "reference": "e1d40d73947567e15c71fdbe355433e5282065f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dotsplatform/utils/zipball/e1d40d73947567e15c71fdbe355433e5282065f7",
+                "reference": "e1d40d73947567e15c71fdbe355433e5282065f7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^9.35|^10.",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "eduarguz/shift-php-cs": "^3.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dots\\": "src/Dots",
+                    "Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Development tools from Dots Platform",
+            "support": {
+                "issues": "https://github.com/dotsplatform/utils/issues",
+                "source": "https://github.com/dotsplatform/utils/tree/v1.1.0"
+            },
+            "time": "2023-05-18T11:48:58+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
