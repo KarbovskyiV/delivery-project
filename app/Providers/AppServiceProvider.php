@@ -2,10 +2,21 @@
 
 namespace App\Providers;
 
+use App\Services\Users\Repositories\EloquentUserRepository;
+use App\Services\Users\Repositories\UserRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
+    /**
+     * All the container bindings that should be registered.
+     *
+     * @var array
+     */
+    public array $bindings = [
+        UserRepository::class => EloquentUserRepository::class,
+    ];
+
     /**
      * Register any application services.
      */
