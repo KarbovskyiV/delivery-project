@@ -8,6 +8,7 @@ class StoreUserDTO extends DTO
 {
     protected string $name;
     protected string $phone;
+    protected string $password;
 
     public function getName(): string
     {
@@ -17,5 +18,10 @@ class StoreUserDTO extends DTO
     public function getPhone(): string
     {
         return $this->phone;
+    }
+
+    public function getPassword(): string
+    {
+        return $this->password;
     }
 }
