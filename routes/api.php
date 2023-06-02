@@ -18,10 +18,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/users/{user}', ShowUserController::class)
-    ->name('users.show');
+    ->name('users.show')
+    ->whereNumber('user');
 Route::post('/users', StoreUserController::class)
-    ->name('users.store');
+    ->name('users.store')
+    ->whereNumber('user');
 Route::put('/users/{user}', UpdateUserController::class)
-    ->name('users.update');
+    ->name('users.update')
+    ->whereNumber('user');
 Route::delete('/users/{user}', DeleteUserController::class)
-    ->name('users.delete');
+    ->name('users.delete')
+    ->whereNumber('user');
