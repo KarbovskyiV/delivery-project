@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->foreignId('users_id')->constrained();
+            $table->foreignUuid('users_id')->constrained();
 
             $table->float('total_price');
         });
